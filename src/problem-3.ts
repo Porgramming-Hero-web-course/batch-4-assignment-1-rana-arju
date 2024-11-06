@@ -4,10 +4,10 @@ function countWordOccurrences(param1: string, param2: string): number {
   let fullSentance = param1.toLowerCase();
   let singleWord = param2.toLowerCase();
   let result = fullSentance.split(singleWord).length - 1;
-  // console.log(result);
+   // console.log(result);
   return result;
 }
 countWordOccurrences(
-  "TypeScript is great. I love TypeScript! I also write tYpeScripT",
+  "TypeScript is great. I love TypeScript! I also write tYpeScripTfull",
   "TYPeScript"
 );
