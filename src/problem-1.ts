@@ -2,6 +2,8 @@
 
 type SumTypes = number[];
 
+// solution - 1
+
 function sumArray(nums: SumTypes): number {
   let sum = 0;
   for (let i = 0; i < nums.length; i++) {
@@ -11,4 +13,24 @@ function sumArray(nums: SumTypes): number {
 
   return sum;
 }
+sumArray([1, 3, 2, 5, 6, 7,6]);
+
+
+
+
+
+//============================
+//        solution -2
+//============================
+
+
+/* function sumArray(nums: SumTypes): number {
+ 
+  let sum = nums.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+  }, 0);
+  return sum;
+}
+
 sumArray([1, 3, 2, 5, 6, 7]);
+*/
