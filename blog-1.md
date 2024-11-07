@@ -8,7 +8,8 @@ A union type allows you to specify a value that can be one of several types. Thi
 3. 
 ## example: 
 
-`type Circle = { shape: 'circle'; radius: number };
+```
+type Circle = { shape: 'circle'; radius: number };
 type Square = { shape: 'square'; sideLength: number };
 
 type Shape = Circle | Square; //this is union type
@@ -19,7 +20,8 @@ function area(shape: Shape): number {
   } else {
     return shape.sideLength ** 2;
   }
-}`
+}
+```
 
 #  Intersection Types
 
@@ -31,7 +33,8 @@ An intersection type combines multiple types into one. It allows you to specify 
 
 
 ## example
-` type User = { name: string; email: string };
+```
+type User = { name: string; email: string };
 type Permissions = { canEdit: boolean; canDelete: boolean };
 
 type AdminUser = User & Permissions;
@@ -41,5 +44,6 @@ const admin: AdminUser = {
   email: "john@example.com",
   canEdit: true,
   canDelete: true
-}; `
+}; 
+```
 
