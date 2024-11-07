@@ -5,7 +5,7 @@
 A union type allows you to specify a value that can be one of several types. This means that a variable or parameter can be assigned one of multiple possible types. The | (pipe) symbol is used to define union types.
 1. You can define a type that can hold different types of values, which is particularly useful when you don't know which type a value will be, but still want to enforce constraints on the possible types.
 2. union types allow different types,
-3. 
+3. Union types are useful when you need to deal with a range of valid options
 ## example: 
 
 ```
@@ -28,7 +28,8 @@ function area(shape: Shape): number {
 An intersection type combines multiple types into one. It allows you to specify that a value must satisfy all the types in the intersection. The ( & ) symbol is used to define intersection types.
 
 1.  Intersection types allow you to combine multiple types into a single type that has all the properties of each type.
-2. 
+2. This is useful when you want to create complex types by combining simpler ones.
+3. You can create new types that are a mix of several existing types, which allows for more flexibility while maintaining type safety.
 
 
 
@@ -37,7 +38,7 @@ An intersection type combines multiple types into one. It allows you to specify 
 type User = { name: string; email: string };
 type Permissions = { canEdit: boolean; canDelete: boolean };
 
-type AdminUser = User & Permissions;
+type AdminUser = User & Permissions; // intersection types
 
 const admin: AdminUser = {
   name: "John",
