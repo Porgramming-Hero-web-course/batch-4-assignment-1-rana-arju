@@ -5,4 +5,6 @@ type DuplicateCheck = number[];
 function removeDuplicates(nums: DuplicateCheck): DuplicateCheck {
   return [...new Set(nums)];
 }
-removeDuplicates([12, 234, 54, 65, 73, 74, 74, 23, 23, 234]);
+removeDuplicates([12, 234, 54, 65, 73, 74, 74, 23, 23,54, 234]);
+
+

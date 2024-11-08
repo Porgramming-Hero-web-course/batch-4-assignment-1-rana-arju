@@ -9,11 +9,12 @@ function sumArray(nums: SumTypes): number {
   for (let i = 0; i < nums.length; i++) {
     sum += nums[i];
   }
-  // console.log(sum);
+   //console.log(sum);
 
   return sum;
 }
 sumArray([1, 3, 2, 5, 6, 7,6]);
+
 
 
 

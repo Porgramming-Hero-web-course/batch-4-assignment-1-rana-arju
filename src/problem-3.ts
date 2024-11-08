@@ -18,4 +18,4 @@ countWordOccurrences(
   "TypeScript is great. I love TypeScript! I also write tYpeScripT",
   "TYPeScript"
 );
-// console.log(result);
+
